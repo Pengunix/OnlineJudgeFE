@@ -1,7 +1,11 @@
 <template>
   <div id="header">
     <Menu theme="light" mode="horizontal" @on-select="handleRoute" :active-name="activeMenu" class="oj-menu">
-      <div class="logo"><span>{{website.website_name}}</span></div>
+      <div class="logo">
+        <span>
+          <img class="Schicon" src="../../../assets/Schicon.png" height="50" width="50">
+        </span>
+      </div>
       <Menu-item name="/">
         <Icon type="home"></Icon>
         {{$t('m.Home')}}
@@ -148,6 +152,11 @@
       font-size: 20px;
       float: left;
       line-height: 60px;
+    }
+    .Schicon {      
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 5px;
     }
 
     .drop-menu {
